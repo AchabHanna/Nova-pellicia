@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link type="text/css" rel="stylesheet" href="./scss/styles.scss" />
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/personalisation.js"></script>
+  <script defer src="./js/personalisation-desktop.js"></script>
+  <title>Nova Pellicia personalisation</title>
+</head>
+
+<body>
+  <header class="header">
+    <!-- <div class="header__separate"> -->
+    <div id="container" class="container">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="logo">
+      <a href="index.html"><img src="/images/nova-pellicia-logo.svg" class="logo__novapellicia"></a>
+    </div>
+    <div class="header__icons">
+      <img src="icons/like.svg" class="header__icons__like">
+      <img src="icons/user.svg" class="header__icons__account">
+      <img src="icons/cart.svg" class="header__icons__basket">
+    </div>
+    <!-- </div> -->
+
+
+    <ul id="menu" class="menu">
+      <li class="portefeuille">
+        <a href="#linkCollection">NOS PORTEFEUILLES</a>
+      </li>
+      <li class="valeurs">
+        <a href="#linkEvent">ÉVÈNEMENTS</a>
+      </li>
+      <li class="histoire">
+        <a href="#linkHistory">NOTRE HISTOIRE</a>
+      </li>
+    </ul>
+  </header>
+
+
+
+  <section>
+    <div class="personalisation">
+      <div class="personalisation__text">
+        <h1 class="personalisation__text__title">Le Vindigo</h1>
+        <p class="personalisation__text__paragraph">
+          Le Vindigo doit son nom au célèbre vin bleu. Un Portefeuille à la couleur originale et rayonnante qui ne manquera pas de vous surprendre et de vous séduire.
+        </p>
+      </div>
+      <div class="personalisation__image">
+        <span class="personalisation__gravure__text"></span>
+        <img src="images/chardonay-court-simple.png">
+      </div>
+      <div class="personalisation__btn">
+        <button class="personalisation__btn__left"></button> 
+        <h2>1/5 couleurs</h2>
+        <button class="personalisation__btn__right"></button>
+      </div>
+      <div class="personalisation__choices">
+        <div class="personalisation__choices__colors">
+          <button class="btn--chardonay"></button>
+          <button class="btn--bordeaux"></button>
+          <button class="btn--petula"></button>
+          <button class="btn--vindigo"></button>
+        </div>
+        <div class="personalisation__choices__symbols">
+            <button class="symbolImage-grape">GRAPPE</button>
+            <button class="symbolImage-bar">BAR</button>
+        </div>
+        <div class="personalisation__choices__finishing">
+          <button class="personalisation__choices__finishing__pearl">Pearl</button>
+          <button class="personalisation__choices__finishing__metal">Clou</button>
+        </div>
+        <div class="personalisation__choices__gravure">
+          <input class="gravureInput" value="" placeholder="Saissisez une gravure">
+        </div>
+      </div>
+      <div class="personalisation__price">
+        <p></p>
+        <button class="btn-validation">Ajouter</button>
+      </div>
+    </div>  
+
+    <div class="personalisation-desktop">
+      <div class="personalisation-desktop__product">
+        <div class="personalisation-desktop__product__image">
+          <span class="personalisation__gravure__text"></span>
+          <img src="images/products/vintigo-court-simple.svg">
+        </div>
+        <div class="personalisation-desktop__product__text">
+          <h1 class="personalisation-desktop__product__text__title">Le Vindigo</h1>
+          <p class="personalisation-desktop__product__text__paragraph">
+            Le Vindigo doit son nom au célèbre vin bleu. Un Portefeuillle à la couleur originale et rayonnante qui ne manquera pas de vous surprendre et de vous séduire.
+          </p>
+        </div>  
+      </div>     
+      <div class="personalisation-desktop__input">
+        <h2>PERSONALISATION</h2>
+        <div class="input-category personalisation-desktop__input__color">
+          <h3>COULEURS</h3>
+          <div class="colorBtn">
+            <button class="colorBtn--chardonay"></button>
+            <button class="colorBtn--bordeaux"></button>
+            <button class="colorBtn--petula"></button>
+            <button class="colorBtn--vindigo"></button>
+          </div>
+        </div>
+        <div class="input-category personalisation-desktop__input__symbol">
+          <h3 class="symbolTitle"> SYMBOLE</h3>
+          <div class="symbolImage">
+            <div class="symbolImage-grape"></div>
+            <div class="symbolImage-bar"></div>
+          </div>
+        </div>
+        <div class="input-category personalisation-desktop__input__finishing">
+          <h3>FINITION</h3>
+          <button class="finishing--pearl">Perles</button>
+          <button class="finishing--metal">Clous</button>
+        </div>
+        <div class="input-category personalisation-desktop__input__text">
+          <h3 class="symbolTitle"> GRAVURE</h3>
+          <input class="gravureInput" value="" placeholder="Saissisez une gravure">
+        </div>
+        <div class="personalisation-desktop__price">
+          <p></p>
+          
+        </div>
+      </div> 
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer--advantage">
+      <div class="footer--advantage__payment">
+        <div>
+          <img src="/icons/lock.svg" class="icon__footer--style"></div>
+        <div class="advantageStyle">Paiement 100% sécurisé</div>
+      </div>
+      <div class="footer--advantage__handmade">
+        <img src="icons/fabrication-main.svg" class="icon__footer--style sizeScissors">
+        <div class="advantageStyle">Fait main</div>
+      </div>
+      <div class="footer--advantage__frenchProducts">
+        <img src="icons/france.svg" class="icon__footer--style ">
+        <div class="advantageStyle">Produits Français</div>
+      </div>
+      <div class="footer--advantage__advantage">
+        <img src="icons/like.svg" class="icon__footer--style">
+        <div class="advantageStyle advantageStyle--margin">Avantages client</div>
+      </div>
+    </div>
+    <div class="footer__backToTop"><a href="index.html">Haut de la page</a></div>
+    <div class="footer--thirdPart">
+      <div class="footer--thirdPart__button footer__help">
+        <div class="footer--thirdPart__button__help footer__help__title">BESOIN D’AIDE ?</div>
+        <button class="footer--thirdPart__button__plus button--help">+
+        </button>
+        <div class="menuHide--help footer--thirdPart__menuHide">
+          <div>Questions fréquentes</div>
+          <div>Options de paiement</div>
+          <div>Livraisons & suivis</div>
+          <div>Expéditions</div>
+          <div>Retours</div>
+          <div>Entretien des produits</div>
+        </div>
+      </div>
+      <div class="footer--thirdPart__button button__information footer__information">
+        <div class="footer--thirdPart__button__informations footer__information__title">INFORMATIONS</div>
+        <button class="footer--thirdPart__button__plus">+</button>
+        <div class="footer--thirdPart__menuHide menuHide--information">
+          <div>A propos de Nova Pellicia</div>
+          <div>Nos engagements</div>
+          <div>Carrière</div>
+          <div>Communication</div>
+          <div>juridique</div>
+          <div>Politique de confidentialité et cookies</div>
+        </div>
+      </div>
+      <div class="footer--thirdPart__socialMedia footer__socialMedia menuHide--socialMedia">
+        <div class="footer__socialMedia__title">TROUVEZ NOUS</div>
+        <div class="socialMedia">
+          <div>
+            <div></div>
+            <div>Facebook</div>
+          </div>
+          <div>
+            <div></div>
+            <div>Twitter</div>
+          </div>
+          <div>
+            <div></div>
+            <div>Instagram</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer--thirdPart__button footer__invitation">
+        <div class="footer--thirdPart__button__invitations footer__invitation__title">RECEVEZ NOS INVITATIONS</div>
+        <button class="footer--thirdPart__button__plus">+</button>
+        <div class="footer--thirdPart__menuHide menuHide--invitation">
+          <div class="footer--thirdPart__menuHide__text">
+            <div class="footer--thirdPart__menuHide__text-style">
+              <input type="email" name="email" id="email_input" placeholder="Votre Email">
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="footer--thirdPart__button footer__contact">
+        <div class="footer--thirdPart__button__contact">
+          CONTACT
+        </div>
+        <button class="footer--thirdPart__button__plus">+</button>
+        <div class="footer--thirdPart__menuHide menuHide--contact">
+          <div class="footer--thirdPart__menuHide-style">contact@novapelllicia.fr</div>
+          <div class="footer--thirdPart__menuHide-style">+33 6 77 88 99 08</div>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

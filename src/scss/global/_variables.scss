@@ -1,0 +1,131 @@
+/**
+* COLORS
+*/
+
+// PRIMARY :
+$black: #222222;
+$white: #ffffff;
+$text: #3d3d3d;
+$footerText: #8e3e3e;
+
+// SECONDARY
+$titleHeroAndJacquemus: #562a01;
+$jacquemus: rgb(205, 153, 153, 0.45);
+$textSectionJacquemus: #80596c;
+$titleSectionCollection: #3d3d3d;
+$subtitleCollectionAndSelection: #c58fa1;
+$titlePagePersonalisation: #bd8396;
+$h5: #D0B8C0;
+
+// COLOR BACKGROUND
+$jacquemusWalletBackground: rgb (123, 6, 0, 0.21);
+$FrameWalletBackground: rgba(207, 177, 189, 0.21);
+$footerBackgroundTitle: #634b57;
+$footerBackgroudAndLine: #f4eef1;
+
+// COLOR BUTTON
+$btnBorder: 1px solid rgba(0, 0, 0, 0.65);
+$btnShadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+
+// GRADIENTS :
+
+$gradient: linear-gradient(90deg, #6b75ca 0%, rgba(240, 243, 248, 0) 100%);
+
+/**
+* FONTS
+*/
+$fontMonserrat: "Montserrat",
+sans-serif;
+$fontPlayfair: "Playfair Display",
+sans-serif;
+$fontRoboto: "robotoregular",
+sans-serif;
+$fontNothingCould: "Nothing You Could Do",
+sans-serif;
+
+$fontSizeTitleHero: rem(24px);
+$fontSizeTitleJaquemus: rem(18px);
+$fontSizeTitleSections: rem(20px);
+
+$fontSizeSubtitle: rem(14px);
+
+$fontSizeText: rem(16px);
+$fontSizeTextHero: rem(18px);
+$fontSizeTextJacquemus: rem(13px);
+
+
+$fontSizeBtn: rem(10px);
+/*FontSize Desktop*/
+$fontSizeTextDesktop:rem(18px);
+
+$fontSizeBtn: rem(10px);
+
+
+
+
+/* BREAKPOINTS
+*/
+$tablet-up: 768px;
+$tablet-down: 767px;
+
+$desktop-up: 1200px;
+$desktop-down: 1199px;
+
+@mixin tablet-up {
+  @media (min-width: $tablet-up) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $tablet-down) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $desktop-up) {
+    @content;
+  }
+}
+
+@mixin desktop-down {
+  @media (max-width: $desktop-down) {
+    @content;
+  }
+}
+
+/**
+* GLOBAL
+*/
+$headerHeight: 40px;
+
+@mixin link {
+  text-decoration: none;
+  color: $black;
+}
+
+@mixin border {
+  border: 1px solid $footerBackgroudAndLine;
+}
+
+@mixin format {
+  height: 100vh;
+  width: 100vw;
+}
+
+/************ DISPLAY ************/
+
+@mixin flexbox($direction: row, $justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+@mixin iconsLike {
+  width: rem(24px);
+  height: rem(25.938px);
+  margin: 5px auto;
+  padding: 0 3px;
+}

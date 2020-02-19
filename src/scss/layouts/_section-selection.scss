@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+.selection {
+  margin-top: rem(120px);
+  line-height: rem(19px);
+  text-align: left;
+  @include flexbox(column, flex-start, left);
+
+  @include desktop-up {
+    margin-top: rem(40px);
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $titleSectionCollection;
+    font-family: $fontMonserrat;
+    font-size: $fontSizeTitleSections;
+
+    @media (min-width: 756px) and (max-width: 1200px) {
+      text-align: center;
+    }
+
+    @include desktop-up {
+      text-align: left;
+      font-size: rem(30px);
+      margin-top: rem(150px);
+    }
+  }
+
+  h3 {
+    margin-top: rem(5px);
+    color: $subtitleCollectionAndSelection;
+    font-family: $fontNothingCould;
+    font-size: $fontSizeSubtitle;
+
+    @media (min-width: 756px) and (max-width: 1200px) {
+      text-align: center;
+    }
+
+    @include desktop-up {
+      font-size: 22px;
+      margin-top: 34px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.selection__selections {
+  @include flexbox(column, center, normal);
+
+  @include tablet-up {
+    @include flexbox(column, center, normal);
+  }
+
+  @include desktop-up {
+    @include flexbox(row, space-between, center);
+  }
+}
+
+h4 {
+  margin-top: rem(20px);
+  margin-bottom: rem(5px);
+  font-family: $fontNothingCould;
+  color: $subtitleCollectionAndSelection;
+  font-size: $fontSizeTitleSections;
+
+  @include desktop-up {
+    margin-top: 45px;
+    font-size: 28px;
+  }
+}
+
+h5 {
+  color: $h5;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: rem(12px);
+  font-family: $fontMonserrat;
+  margin-top: rem(5px);
+
+  @include desktop-up {
+    font-size: 18px;
+    margin-top: 13px;
+  }
+}
+
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: $fontMonserrat;
+  font-size: $fontSizeText;
+  line-height: 1.5;
+  text-align: left;
+  color: $text;
+}
+
+.selections__btnaAddWallet {
+  @include button-medium;
+
+  @include desktop-up {
+    margin-bottom: 0;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+
+    &:hover {
+      background-color: #3d3d3d;
+    }
+  }
+}
+
+.frameSelection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: rem(40px);
+  // width: rem(295px);
+  height: rem(261px);
+  background-color: $FrameWalletBackground;
+  position: relative;
+  z-index: -2;
+
+  .likes {
+    position: absolute;
+    top: rem(18px);
+    right: rem(16px);
+    @include iconsLike;
+  }
+
+  @include tablet-up {
+    // width: 500px;
+    height: 500px;
+  }
+
+  @include desktop-up {
+    width: 365px;
+    height: 496px;
+  }
+
+  &__visual-wallet {
+    @include flexbox(row, center, center);
+    margin: 0 auto;
+    position: relative;
+    z-index: -2;
+  }
+
+  &__text-wallet {
+    @include flexbox(column, space-around, left);
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.frameSelection {
+  background-attachment: contain;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--img1selection {
+    background-image: url(/images/bordeaux-long-grappe-or-face-selection.png);
+    background-size: 70%;
+  }
+
+  &--img2selection {
+    background-image: url(/images/petula-court-barre-argent-face-selection.png);
+  }
+
+  &--img3selection {
+    background-image: url(/images/vintigo-long-grappe-or-face-selection.png);
+    background-size: 70%;
+  }
+}
+
+.selection__wallet {
+  @include desktop-up {
+    &:nth-child(1) {
+      margin-right: 16px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 16px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.sectionEvent {
+  // max-width: 1100px;
+  margin-top: rem(120px);
+  line-height: rem(19px);
+  text-align: left;
+
+  &__event {
+    @include flexbox(column, center);
+    margin-top: rem(20px);
+
+    @include tablet-up {
+      @include flexbox(column, center);
+    }
+
+    @include desktop-up {
+      @include flexbox(row, space-between, center);
+      flex-shrink: 1;
+      margin-top: 60px;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $titleSectionCollection;
+    font-family: $fontMonserrat;
+    font-size: $fontSizeTitleSections;
+    text-align: left;
+
+    @media (min-width: 756px) and (max-width: 1200px) {
+      text-align: center;
+    }
+
+    @include desktop-up {
+      font-size: rem(30px);
+      text-align: left;
+      margin-bottom: 35px;
+      margin-top: rem(200px);
+    }
+  }
+
+  h3 {
+    margin-top: rem(5px);
+    margin-bottom: rem(30px);
+    color: $subtitleCollectionAndSelection;
+    font-family: $fontNothingCould;
+    font-size: $fontSizeSubtitle;
+
+    @media (min-width: 756px) and (max-width: 1200px) {
+      text-align: center;
+    }
+
+    @include desktop-up {
+      font-size: rem(22px);
+      margin-top: 34px;
+      margin-bottom: 25px;
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: $fontMonserrat;
+    font-size: $fontSizeText;
+    line-height: 1.5;
+    text-align: left;
+    color: $text;
+  }
+}
+
+.imgEvent {
+  width: 100%;
+  flex-shrink: 1;
+  margin-bottom: 15px;
+
+  &--display {
+    display: none;
+  }
+
+  @include tablet-up {
+    // width: 375px;
+    // height: 573px;
+  }
+
+  @include desktop-up {
+    margin-right: 15px;
+    margin-bottom: 30px;
+    //margin-top: 2.5rem;
+
+    &--display {
+      display: block;
+    }
+  }
+}
+
+.imgEvent:nth-child(3) {
+  margin-right: 0px;
+}

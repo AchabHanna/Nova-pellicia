@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+.collection {
+  margin-top: rem(120px);
+  line-height: rem(19px);
+
+  p {
+    margin-top: rem(10px);
+    font-family: $fontMonserrat;
+    font-size: rem(16px);
+    color: $text;
+
+    @include desktop-up {
+      //margin-top: rem(10px);
+      font-size: rem(21px);
+    }
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  color: $titleSectionCollection;
+  font-family: $fontMonserrat;
+  font-size: $fontSizeTitleSections;
+  text-align: left;
+
+  @media (min-width: 756px) and (max-width: 1200px) {
+    text-align: center;
+  }
+
+  @include desktop-up {
+    text-align: left;
+    font-size: rem(30px);
+  }
+}
+
+h3 {
+  margin-top: rem(5px);
+  color: $subtitleCollectionAndSelection;
+  font-family: $fontNothingCould;
+  font-size: $fontSizeSubtitle;
+  text-align: left;
+
+  @media (min-width: 756px) and (max-width: 1200px) {
+    text-align: center;
+  }
+
+  @include desktop-up {
+    text-align: left;
+    font-size: rem(22px);
+    margin-top: rem(34px);
+    margin-bottom: rem(25px);
+  }
+}
+
+.collection__collections {
+  @include flexbox(column, center, normal);
+
+  @include tablet-up {
+    @include flexbox(column, center, normal);
+  }
+
+  @include desktop-up {
+    @include flexbox(row, space-between, center);
+
+    //&:first-child
+  }
+}
+
+.frameCollection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: rem(40px);
+  // width: rem(295px);
+  height: rem(261px);
+  background-color: $FrameWalletBackground;
+
+  @include tablet-up {
+    //width: 500px;
+    height: 500px;
+  }
+
+  @include desktop-up {
+    min-width: 545px;
+    min-height: 512px;
+  }
+
+  &__visual-wallet {
+    @include flexbox(row, center, center);
+    margin: 0 auto;
+
+    &--back {
+      opacity: 0;
+      display: none;
+    }
+
+    &:hover {
+      // opacity: 0;
+      //display: none;
+
+      &--back {
+        opacity: 100%;
+        display: absolute;
+      }
+    }
+  }
+}
+
+.collection__wallets {
+  @include desktop-up {
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.collection__btnWallet {
+  @include button-large;
+
+  @include desktop-up {
+    margin-top: rem(15px);
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+
+    &:hover {
+      background-color: #3d3d3d;
+    }
+  }
+}
+
+.frameCollection {
+  background-attachment: contain;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--img1collection {
+    background-image: url(/images/homme-beige-face-simple-1.png);
+  }
+
+  &--img2collection {
+    background-image: url(/images/portefeuille-rose-simplcollectionn.png);
+    background-size: 70%;
+  }
+}
