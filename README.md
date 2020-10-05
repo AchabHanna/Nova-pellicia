@@ -5,8 +5,11 @@
 
 ## Membres :
   [Oum MAUDUIT](https://github.com/Mauduit-O)
+  
   [Quentin TROUVE](https://github.com/quentintrouve)
+  
   [Anthony ROUX](https://github.com/anthony-roux)
+  
   [Priska SANTIANY](https://github.com/SP-Sumampow)
 
   
