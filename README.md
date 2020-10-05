@@ -12,7 +12,7 @@
   
   [Priska SANTIANY](https://github.com/SP-Sumampow)
   
-  [Hanna ACHAB] (https://github.com/AchabHanna)
+  [Hanna ACHAB](https://github.com/AchabHanna)
 
   
 ## Caractéristiques :
